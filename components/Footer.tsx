@@ -7,21 +7,21 @@ const Footer: FC = () => {
 	const scrollToTop = () => {
         scrollTo({
             top: 0,
-            right: 0,
+			left: 0,
             behavior: 'smooth'
         });
     };
 
-	const toTopBtn = useRef(null);
-	
+	const toTopBtn = useRef<HTMLButtonElement>(null);
+
 	useEffect(() => {
-		console.log(toTopBtn.current);
+		const topBtn = toTopBtn.current;
 
         window.onscroll = () => {
             if (document.documentElement.scrollTop >= 200 || document.body.scrollTop >= 200) {
-                toTopBtn.current.classList.add('show-to-top-btn');
+                topBtn!.classList.add('show-to-top-btn');
             } else {
-                toTopBtn.current.classList.remove('show-to-top-btn');
+                topBtn!.classList.remove('show-to-top-btn');
             }
         };
 

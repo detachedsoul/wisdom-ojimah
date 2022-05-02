@@ -1036,11 +1036,6 @@ img {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.drop-shadow-md {
-  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .drop-shadow-xl {
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1145,24 +1140,14 @@ img {
   top: 100%;
 }
 
-.before\:left-\[40\%\]::before {
-  content: var(--tw-content);
-  left: 40%;
-}
-
-.before\:left-\[45\%\]::before {
-  content: var(--tw-content);
-  left: 45%;
-}
-
-.before\:left-\[35\%\]::before {
-  content: var(--tw-content);
-  left: 35%;
-}
-
 .before\:left-\[37\%\]::before {
   content: var(--tw-content);
   left: 37%;
+}
+
+.before\:left-\[40\%\]::before {
+  content: var(--tw-content);
+  left: 40%;
 }
 
 .before\:border-8::before {
