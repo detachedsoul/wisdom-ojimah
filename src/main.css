@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    a {
+        @apply font-quicksand font-semibold
+    }
+
+    img {
+        @apply object-cover aspect-square
+    }
+
+    .fi {
+        @apply relative top-1
+    }
+
+    .header {
+        @apply font-quicksand tracking-wider font-bold
+    }
+
+    .btn {
+        @apply rounded-lg py-1.5 px-4
+    }
+}
+
+@layer utilities {
+    .show-to-top-btn {
+        @apply translate-x-0 right-4
+    }
+}
